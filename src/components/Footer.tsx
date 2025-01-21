@@ -16,7 +16,7 @@ const Footer = () => {
             <Icon icon="si:youtube-line" width="24" height="24" />
           </a>
         </div>
-        <div className="logo">
+        <div className="w-32">
           <Link to="/">
             <img
               src="/src/assets/logo/rawexp.png"

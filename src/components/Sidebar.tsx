@@ -4,7 +4,7 @@ import { Icon } from '@iconify-icon/react';
 const Sidebar = () => {
     return (
         <aside id="jopho-aside">
-            <div className="jopho-logo">
+            <div className="jopho-logo w-32">
                 <Link to="/">
                     <img src="/src/assets/logo/rawexp.png" alt="logo" />
                 </Link>
