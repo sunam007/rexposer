@@ -400,3 +400,38 @@ body.offcanvas .jopho-nav-toggle {
   margin-left: 15px;
   line-height: 1em;
 }
+
+.team-img-div {
+  padding: 0 30px 30px 15px;
+  position: relative;
+}
+
+.team-img-div::after {
+  content: "";
+  width: 90%;
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  left: -4%;
+  background-image: url(./assets/images/dots.png);
+  background-repeat: repeat;
+  z-index: 1;
+}
+
+.team-img-div img {
+  /* width: 70%; */
+  position: relative;
+  z-index: 3;
+}
+
+.team-img-div::before {
+  content: "";
+  position: absolute;
+  /* width: 48%; */
+  top: 30px;
+  right: 0;
+  left: 45px;
+  bottom: 0;
+  background: var(--primary-color);
+  z-index: 2;
+}

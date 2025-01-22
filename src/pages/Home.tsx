@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <>
       <div>
-        {/* <HeroSlider /> */}
-        <HeroAboutUs />
-        {/* <Portfolio/> */}
+        <HeroSlider />
+        {/* <HeroAboutUs /> */}
+        <Portfolio/>
       </div>
     </>
   );

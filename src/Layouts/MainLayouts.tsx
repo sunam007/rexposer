@@ -8,7 +8,7 @@ const MainLayout = () => {
             <Sidebar />
             <div id="jopho-main">
                 <Outlet />
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </>
     );
