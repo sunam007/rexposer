@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Container from "../Container";
 import SectionSubTitle from "../SectionSubTitle";
 import SectionTitle from "../SectionTitle";
+import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   const images = [
@@ -23,23 +24,29 @@ const Portfolio = () => {
       {/* Title */}
       <div className="grid grid-cols-1 mb-7">
         <SectionSubTitle>Portfolio</SectionSubTitle>
-        <SectionTitle>Gallery</SectionTitle>
+        <SectionTitle>Albums</SectionTitle>
       </div>
 
       {/* Image Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {images.map((src, index) => (
-          <motion.img
-            key={index}
-            src={src}
-            alt={`Album ${index + 1}`}
-            className="w-full rounded shadow-md"
-            variants={fadeInVariant}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.9, delay: index * 0.4 }}
-          />
+          <NavLink to={"/"} key={index}>
+            <div className="relative group">
+              {/* Image */}
+              <motion.img
+                src={src}
+                alt={`Album ${index + 1}`}
+                className="w-full shadow-md"
+                variants={fadeInVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5, delay: index * 0.5 }}
+              />
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-700 delay-700"></div>
+            </div>
+          </NavLink>
         ))}
       </div>
     </Container>
@@ -47,6 +54,7 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
 // import "animate.css";
 // import Container from "../Container";
 // import SectionSubTitle from "../SectionSubTitle";
