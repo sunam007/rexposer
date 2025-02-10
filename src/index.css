@@ -435,3 +435,51 @@ body.offcanvas .jopho-nav-toggle {
   background: var(--primary-color);
   z-index: 2;
 }
+
+.service-img-div {
+  padding: 0 30px 30px 15px;
+  position: relative;
+}
+
+.service-img-div img {
+  position: relative;
+  z-index: 3;
+}
+
+.service-img-div::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  left: 40px;
+  bottom: 50px;
+  background: #191919;
+  z-index: 2;
+  transition: all 0.5s ease 0s;
+}
+
+.service-img-div:hover::before {
+  background: var(--primary-color);
+}
+
+.service-title {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 80px;
+  right: -79px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 0.5s ease 0s;
+}
+
+.service-title:hover {
+  color: #fff;
+}
+
+.service-img{
+  transition: all 0.5s ease 0s;
+}
+
+.service-img:hover{
+  transform: scale(0.98);
+}

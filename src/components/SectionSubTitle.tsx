@@ -1,5 +1,3 @@
-import React from "react";
-
 const SectionSubTitle = ({ children, className = "" }) => {
   return (
     <p

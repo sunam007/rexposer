@@ -12,6 +12,9 @@ const Portfolio = () => {
     "/src/assets/images/album/01.jpg",
     "/src/assets/images/album/02.jpg",
     "/src/assets/images/album/07.jpg",
+    "/src/assets/images/album/01.jpg",
+    "/src/assets/images/album/02.jpg",
+    "/src/assets/images/album/07.jpg",
   ];
 
   const fadeInVariant = {
@@ -41,7 +44,7 @@ const Portfolio = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5, delay: index * 0.5 }}
+                transition={{ duration: 0.5, delay: index * 0.3 }}
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-700 delay-700"></div>
