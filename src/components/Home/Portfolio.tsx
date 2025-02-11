@@ -43,7 +43,7 @@ const Portfolio = () => {
                 variants={fadeInVariant}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.5, delay: index * 0.3 }}
               />
               {/* Overlay */}
